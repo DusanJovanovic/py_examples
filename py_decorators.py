@@ -44,6 +44,7 @@ def test_users():
     for user, password in test_data_good.items():
         assert check_credentials(user, password) == f'Welcome {user}!'
     print('Test succesful, test_data_good.')
+
     for user, password in test_data_bad.items():
         assert check_credentials(user, password) == f'Wrong password!!!'
     print('Test succesful, test_data_bad.')
